@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Fondo y centrado de la página */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f1720 0%, #16202a 100%);
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 24px;
+}
+
+.main-panel {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  min-height: 60vh;
+}
+
+.contenedor-login {
+  width: 120%;
+  max-width:600px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 80px;
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.6);
+  border: 1px solid rgba(26, 115, 232, 0.08);
+}
+
+.cabecera-login {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.cabecera-login h2 {
+  font-size: 22px;
+  color: #0b1220;
+  margin-bottom: 6px;
+}
+
+.cabecera-login p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.formulario-login {
+  margin-top: 12px;
+}
+
+.campo-form {
+  margin-bottom: 16px;
+}
+
+.campo-form label {
+  display: block;
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.campo-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e6e9ee;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #ffffff;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.campo-form input:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 6px 18px rgba(26, 115, 232, 0.12);
+}
+
+.boton-login {
+  margin-top: 8px;
+}
+
+.boton-login button {
+  width: 100%;
+  padding: 12px 16px;
+  background: linear-gradient(90deg, #1a73e8, #1967d2);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(26, 115, 232, 0.18);
+  transition: transform 0.08s ease, box-shadow 0.12s ease;
+}
+
+.boton-login button:hover {
+  transform: translateY(-2px);
+}
+
+.boton-login button:active {
+  transform: translateY(0);
+}
+
+.pie-login p {
+  font-size: 13px;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.pie-login a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.pie-login a:hover {
+  text-decoration: underline;
+}
+
+.btn-regresar {
+  margin-top: 12px;
+}
+
+.btn-regresar button {
+  width: 100%;
+  padding: 10px 14px;
+  background: #f3f4f6;
+  color: #111827;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 18px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contenedor-login {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .cabecera-login h2 {
+    font-size: 20px;
+  }
+}

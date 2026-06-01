@@ -2,10 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Registro</title>
-    <link rel="stylesheet" href="/estilos/tailwind.css">
 </head>
-<body>
+<body class="min-h-screen bg-cyan-900 overflow-hidden">
+<div class="fixed inset-0 -z-10">
+    <img class="h-full w-full object-cover" src="../imgs/lluvia.gif" alt="Fondo animado">
+    <div class="absolute inset-0 bg-black/40"></div>
+</div>
+<section class="min-h-screen flex items-center justify-center relative z-10">
+    <!--login container-->
+    <div class="bg-gray-100 flex items-stretch rounded-3xl shadow-lg max-w-3xl p-6">
+        <!--form-->
+        <div class="sm:w-1/2 px-7">
+            <h2 class="font-bold text-3xl text-cyan-900">Registro</h2>
+            <p class="text-sm mt-4 text-3xl">ingrese las credenciales</p>
+            <form action="" class="flex flex-col gap-4">
+                <input class="p-3 mt-8 rounded-xl border" type="text" name="name" id="name" placeholder="nombre">
+                <input class="p-3 mt-1 rounded-xl border" type="text" name="name" id="apellido" placeholder="apellido">
+                <input class="p-3 rounded-xl border" type="email" name="email" id="email" placeholder="Correo">
+                <input class="p-3 rounded-xl border" type="password" name="password" id="password" placeholder="Password">
+                <button class="bg-cyan-900 rounded-xl text-white py-3 text-1xl bold" >Login</button>
+            </form>
 
+
+            <p class="mt-6 text-sm border-b py-6 ">Ya tienes una cuenta? <a class=" underline ml-6" href="login.html"> preciona aqui</a></p>
+
+        </div>
+        <!--imagen-->
+        <div class="w-1/2 gf flex">
+            <img class="rounded-3xl h-full w-full object-cover" src="../imgs/sigma.jpg" alt="Imagen Sigma">
+        </div>
+    </div>
+</section>
 </body>
 </html>
